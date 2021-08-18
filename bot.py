@@ -59,7 +59,7 @@ async def uploadgif(client, message):
     except:
       await msg.edit_text("Something really Happend Wrong...") 
   else:
-    await message.reply_text("Size Should Be Less Than 5 mb")
+    await message.reply_text("Size Should Be Less Than 1024 mb")
 
 @Tgraph.on_message(filters.video)
 async def uploadvid(client, message):
@@ -76,7 +76,7 @@ async def uploadvid(client, message):
     except:
       await msg.edit_text("Something really Happend Wrong...") 
   else:
-    await message.reply_text("Size Should Be Less Than 5 mb")
+    await message.reply_text("Size Should Be Less Than 1024 mb")
 
 @Tgraph.on_message(filters.command(["start"]))
 async def home(client, message):
